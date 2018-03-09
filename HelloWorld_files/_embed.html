@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://gitter.im/ethereum/remix/~embed -->
+<html class="no-js " lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=IE9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+    <title>ethereum/remix - Gitter</title>
+    <style>
+
+      @-webkit-keyframes pulsey {
+        0% { opacity: 0.6; }
+        50% { opacity: 1; }
+        100% { opacity: 0.6; }
+      }
+
+      html.loading .trpContentPanel { background: url("//cdn01.gitter.im/_s/708c5ff/images/logo-mark-grey-64.png") center no-repeat; height: 90%; -webkit-animation: pulsey 2s ease-out; -webkit-animation-iteration-count: infinite;  }
+      html.loading .trpContentPanel > * { visibility: hidden; }
+    </style>
+    <!--<base target="_parent">--><base href="." target="_parent">
+
+
+
+        <link rel="preload" href="https://cdn03.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Regular.otf.woff" as="font" type="font/woff">
+    <link rel="preload" href="https://cdn01.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-It.otf.woff" as="font" type="font/woff">
+    <link rel="preload" href="https://cdn01.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Bold.otf.woff" as="font" type="font/woff">
+    <link rel="preload" href="https://cdn02.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Semibold.otf.woff" as="font" type="font/woff">
+    <link rel="preload" href="https://cdn03.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-BoldIt.otf.woff" as="font" type="font/woff">
+    <link rel="preload" href="https://cdn02.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Light.otf.woff" as="font" type="font/woff">
+    <link rel="preload" href="https://cdn03.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-ExtraLight.otf.woff" as="font" type="font/woff">
+
+  <style>
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: bold;
+      src: local("SourceSansPro-Bold");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: italic;
+      font-weight: bold;
+      src: local("SourceSansPro-BoldIt");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: 200;
+      src: local("SourceSansPro-ExtraLight");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: italic;
+      font-weight: normal;
+      src: local("SourceSansPro-It");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: 300;
+      src: local("SourceSansPro-Light");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: normal;
+      src: local("SourceSansPro-Regular");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: 600;
+      src: local("SourceSansPro-Semibold");
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn03.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Regular.otf.woff") format('woff');
+      font-weight: normal;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn01.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-It.otf.woff") format('woff');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn01.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Bold.otf.woff") format('woff');
+      font-weight: bold;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn02.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Semibold.otf.woff") format('woff');
+      font-weight: 600;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn03.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-BoldIt.otf.woff") format('woff');
+      font-weight: bold;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn02.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-Light.otf.woff") format('woff');
+      font-weight: 300;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+      src: url("//cdn03.gitter.im/_s/708c5ff/fonts/sourcesans/SourceSansPro-ExtraLight.otf.woff") format('woff');
+      font-weight: 200;
+      font-style: normal
+    }
+  </style>
+
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./router-nli-embed-chat.css">
+
+
+    <link id="favicon" rel="shortcut icon" href="https://cdn03.gitter.im/_s/708c5ff/images/favicon-normal.ico"><!-- Le fav and touch icons -->
+
+  </head>
+  <body class="iframe embedded logged-out">
+    <div class="chat-app">
+  <div class="trpContentPanel" id="content-wrapper"><div>
+    <div class="trpChatPanel">
+
+      <div id="unread-banner" style="display:none"></div>
+      <div id="bottom-unread-banner" style="display:none"></div>
+
+      <div id="content-frame" class="trpChatContainer primary-scroll chat-container scroller" role="log" aria-live="polite" aria-atomic="false" aria-relevant="additions text">
+        <div id="chat-container" class=""><div>
+                <div class="chat-item model-id-5a94e89c53c1dbb7438049bf burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-5a94d86bd73408ce4f8efcdc avatar-s offline  ">
+  <img src="./b30vFA8W_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/954946299111108608/b30vFA8W_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Stefano Andreani</div>
+      <div class="chat-item__username js-chat-item-from">@sandreanig_twitter</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a94e89c53c1dbb7438049bf" title="">2월 27 14:11</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      hi, i have this error, what may i do?<br>Gas requirement of function HelloworldContract.word() high: infinite. If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9502e86f8b4b9946c900c4 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-560006cc0fc9f982beb1564f avatar-s offline  ">
+  <img src="./6940742" srcset="https://avatars1.githubusercontent.com/u/6940742?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">yann300</div>
+      <div class="chat-item__username js-chat-item-from">@yann300</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a9502e86f8b4b9946c900c4" title="">2월 27 16:04</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      <span data-link-type="mention" data-screen-name="hongzhen-nework" class="mention">@hongzhen-nework</span> which os do you use?
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a950d4235dd17022efc4019 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-5989998fd73408ce4f708640 avatar-s offline  ">
+  <img src="./dcb4111c5a38b4db37986cfbae0d2de6_bigger.png" srcset="https://pbs.twimg.com/profile_images/378800000721445245/dcb4111c5a38b4db37986cfbae0d2de6_bigger.png 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Kunal S Ransing</div>
+      <div class="chat-item__username js-chat-item-from">@KunalRansing_twitter</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a950d4235dd17022efc4019" title="">2월 27 16:48</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      Hi,   I created smart contract to send amount to address stored in it.  In remix, there is gas limit &amp; value. When I need send(contract function) - i put amount in that box.  but give error as "transact to ContractSend.send errored: Transaction execution error."  Now I put some data into VALUE field of remix then it works. Since I'm new to this. I am not getting different between amount I want to send &amp; VALUE field of remix. Please help
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9517c2458cbde557d2e8e3 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-564dc2d016b6c7089cbb50fa avatar-s offline  ">
+  <img src="./10957413" srcset="https://avatars1.githubusercontent.com/u/10957413?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Nikolay Neykov</div>
+      <div class="chat-item__username js-chat-item-from">@shkurata</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a9517c2458cbde557d2e8e3" title="">2월 27 17:33</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      hello
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9517e2c3c5f8b90d0f290c burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      I'm learning how to build dapps with ethereum 
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9517fa8f1c77ef3a5ed7ac burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      but I thing I don't understand something 
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a951808458cbde557d2ea27 burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      in a voting app for example 
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9518256f8b4b9946c97f28 burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      should every user download the whole blockchain?
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9518666f8b4b9946c980af burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      to be able to vote 
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a95286e0202dc012e8e5319 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-59be4828d73408ce4f761802 avatar-s offline  ">
+  <img src="./5115199" srcset="https://avatars0.githubusercontent.com/u/5115199?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Shachindra</div>
+      <div class="chat-item__username js-chat-item-from">@Shachindra</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a95286e0202dc012e8e5319" title="">2월 27 18:44</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      <span data-link-type="mention" data-screen-name="samsoft00" class="mention">@samsoft00</span> You can use puppeth command to setup a PoA or PoW network on the VM (Azure, AWS, GCC or DO) <a href="https://modalduality.org/posts/puppeth/" rel="nofollow noopener noreferrer" target="_blank" class="link">https://modalduality.org/posts/puppeth/</a>
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9528fb6f8b4b9946c9dfbd burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      <span data-link-type="mention" data-screen-name="shkurata" class="mention">@shkurata</span> No you only need the smart contract address and metamask to interact with the DApp. You can create a UI around the Smart contract using the ABI and web3 functions for better UX
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a9533760202dc012e8e9df8 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-5a859f07d73408ce4f8d46bc avatar-s offline  ">
+  <img src="./8099054" srcset="https://avatars0.githubusercontent.com/u/8099054?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">bhattadmahesh</div>
+      <div class="chat-item__username js-chat-item-from">@bhattadmahesh</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a9533760202dc012e8e9df8" title="">2월 27 19:31</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      Guys, I need to update the hash code returned for a transaction on the ethereum network to my Oracle database table. How can I achieve this? Also I need to access some fields from Oracle table before posting the transaction to ethereum network. Please advice.
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a953eaa35dd17022efd7278 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-564dc2d016b6c7089cbb50fa avatar-s offline  ">
+  <img src="./10957413" srcset="https://avatars1.githubusercontent.com/u/10957413?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Nikolay Neykov</div>
+      <div class="chat-item__username js-chat-item-from">@shkurata</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a953eaa35dd17022efd7278" title="">2월 27 20:19</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      thank <span data-link-type="mention" data-screen-name="Shachindra" class="mention">@Shachindra</span> 
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a956378458cbde557d4c540 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-5a738265d73408ce4f8b494b avatar-s offline  ">
+  <img src="./36054073" srcset="https://avatars1.githubusercontent.com/u/36054073?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Hendrikeshol</div>
+      <div class="chat-item__username js-chat-item-from">@Hendrikeshol</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a956378458cbde557d4c540" title="">2월 27 22:56</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      What is the deployment address?
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a958d506fba1a703aaaa18b burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-5a91db6dd73408ce4f8eb08c avatar-s offline  ">
+  <img src="./NDanMzb0_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/869585525857976320/NDanMzb0_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Avi</div>
+      <div class="chat-item__username js-chat-item-from">@vattiavinash_twitter</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a958d506fba1a703aaaa18b" title="">2월 28 01:54</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      unable to generate contract address during web3 environoment
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a958d5c8f1c77ef3a61afa2 burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      any suggestion please
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a958dd8c3c5f8b90d120284 burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      i am getting error statement like this: creation of Color errored: gas required exceeds allowance or always failing transaction
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a95b5db458cbde557d6b172 burstStart read "><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <div class="trpDisplayPicture avatar-5a8fdf4fd73408ce4f8e79f9 avatar-s offline  ">
+  <img src="./d01d7f4b42828f08f4609fee5c2eeee6_bigger.png" srcset="https://pbs.twimg.com/profile_images/3568995113/d01d7f4b42828f08f4609fee5c2eeee6_bigger.png 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Thiago Mattos</div>
+      <div class="chat-item__username js-chat-item-from">@thiagonmat_twitter</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a95b5db458cbde557d6b172" title="">2월 28 04:47</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">
+      alguem que fale portugues aqui?
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a95b62a458cbde557d6b355 burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      <p>event Transfer(address indexed from, address indexed to, uint256 value);</p><p>/<em> Initializes contract with initial supply tokens to the creator of the contract </em>/<br>function TokenTeste(uint256 _suply, string _name, string _symbol, uint8 _decimals) {<br>    /<em> se não houver nada é gerado 1 milhão de unidades</em>/<br>    if (_suply == 0) _suply = 1000000;</p><pre><code>balanceOf[msg.sender] = _suply;              <span class="comment">// Give the creator all initial tokens</span>
+name = _name;                                   <span class="comment">// Set the name for display purposes</span>
+symbol = _symbol;                               <span class="comment">// Set the symbol for display purposes</span>
+decimals = _decimals;                            <span class="comment">// Amount of decimals for display purposes</span></code></pre><p>}</p><p>/<em>Enviar Moedas</em>/<br>function transfer(address _to, uint256 _value) {</p><pre><code><span class="comment">/* Se o remetente não tiver saldo a operação para */</span>
+<span class="atom">if</span> (<span class="atom">balanceOf</span>[<span class="atom">msg</span>.<span class="atom">sender</span>] &lt; <span class="name">_value</span>) <span class="atom">throw</span>;
+<span class="atom">if</span> (<span class="atom">balanceOf</span>[<span class="name">_to</span>] + <span class="name">_value</span> &lt; <span class="atom">balanceOf</span>[<span class="name">_to</span>]) <span class="atom">throw</span>;
+
+<span class="comment">/* Add and subtract new balances */</span>
+<span class="atom">balanceOf</span>[<span class="atom">msg</span>.<span class="atom">sender</span>] -= <span class="name">_value</span>;
+<span class="atom">balanceOf</span>[<span class="name">_to</span>] += <span class="name">_value</span>;
+
+<span class="comment">/* Notify anyone listening that this transfer took place */</span>
+<span class="name">Transfer</span>(<span class="atom">msg</span>.<span class="atom">sender</span>, <span class="name">_to</span>, <span class="name">_value</span>);</code></pre><p>}<br>}</p>
+    </div>
+  </div>
+</div>
+</div>
+                <div class="chat-item model-id-5a95b63535dd17022e002fd2 burstContinued read "><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions">
+    <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">
+      this code dont compile 
+    </div>
+  </div>
+</div>
+</div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            <div class="chat-item model-id-5a95b8f68f1c77ef3a62bf3c burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-590b4ec2d73408ce4f5cf1ab avatar-s   ">
+  <img src="./28026432" srcset="https://avatars0.githubusercontent.com/u/28026432?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Ahmed Ali</div>
+      <div class="chat-item__username js-chat-item-from">@kingcocomango</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a95b8f68f1c77ef3a62bf3c" title="2018년 2월 28일 오전 5:00" data-disable-routing="true">2월 28 05:00</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">Pasting a transaction hash into the debugger doesnt work</div>
+  </div>
+</div></div><div class="chat-item model-id-5a95b8ff8f1c77ef3a62bf75 burstContinued read"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">And the remix debugger on etherscan doesnt attach to the source code</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a95b90ac3c5f8b90d130872 burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">Is there a way for me to debug a transaction while looking through the source code?</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a95b9130202dc012e91c84c burstStart read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a8fdf4fd73408ce4f8e79f9 avatar-s   ">
+  <img src="./d01d7f4b42828f08f4609fee5c2eeee6_bigger.png" srcset="https://pbs.twimg.com/profile_images/3568995113/d01d7f4b42828f08f4609fee5c2eeee6_bigger.png 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Thiago Mattos</div>
+      <div class="chat-item__username js-chat-item-from">@thiagonmat_twitter</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a95b9130202dc012e91c84c" title="2018년 2월 28일 오전 5:01" data-disable-routing="true">2월 28 05:01</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">source code </div>
+  </div>
+</div></div><div class="chat-item model-id-5a95b94fe4d1c63604a12f3e burstStart read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-590b4ec2d73408ce4f5cf1ab avatar-s   ">
+  <img src="./28026432" srcset="https://avatars0.githubusercontent.com/u/28026432?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Ahmed Ali</div>
+      <div class="chat-item__username js-chat-item-from">@kingcocomango</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a95b94fe4d1c63604a12f3e" title="2018년 2월 28일 오전 5:02" data-disable-routing="true">2월 28 05:02</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">?</div>
+  </div>
+</div></div><div class="chat-item model-id-5a965ca36f8b4b9946d01692 burstStart read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a965b76d73408ce4f8f2fda avatar-s   ">
+  <img src="./28561454" srcset="https://avatars1.githubusercontent.com/u/28561454?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">CzaBoy</div>
+      <div class="chat-item__username js-chat-item-from">@CzaBoy</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a965ca36f8b4b9946d01692" title="2018년 2월 28일 오후 4:39" data-disable-routing="true">2월 28 16:39</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">A Scenario File is required. The file must be of type JSON. Use the "Save Transactions" Button to generate a new Scenario File. What?</div>
+  </div>
+</div></div><div class="chat-item model-id-5a965ce935dd17022e030c4f burstStart read hasBeenEdited burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-560006cc0fc9f982beb1564f avatar-s   ">
+  <img src="./6940742" srcset="https://avatars1.githubusercontent.com/u/6940742?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">yann300</div>
+      <div class="chat-item__username js-chat-item-from">@yann300</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a965ce935dd17022e030c4f" title="2018년 2월 28일 오후 4:40" data-disable-routing="true">2월 28 16:40</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">this can be use if you want to save txs and reexecute them later</div>
+  </div>
+</div></div><div class="chat-item model-id-5a96c1a30202dc012e96bc9a burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-560006cc0fc9f982beb1564f avatar-s   ">
+  <img src="./6940742" srcset="https://avatars1.githubusercontent.com/u/6940742?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">yann300</div>
+      <div class="chat-item__username js-chat-item-from">@yann300</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a96c1a30202dc012e96bc9a" title="2018년 2월 28일 오후 11:50" data-disable-routing="true">2월 28 23:50</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">this is a contract in the test network.</div>
+  </div>
+</div></div><div class="chat-item model-id-5a96c1f8758c233504ce9844 burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">in mainet, it would be the same contract... but in mainnet</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a96c2ffc3c5f8b90d180665 burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-560006cc0fc9f982beb1564f avatar-s   ">
+  <img src="./6940742" srcset="https://avatars1.githubusercontent.com/u/6940742?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">yann300</div>
+      <div class="chat-item__username js-chat-item-from">@yann300</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a96c2ffc3c5f8b90d180665" title="2018년 2월 28일 오후 11:55" data-disable-routing="true">2월 28 23:55</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">you can't move, but you can deploy the same code in mainnet</div>
+  </div>
+</div></div><div class="chat-item model-id-5a96c34a458cbde557dbc943 burstContinued read hasBeenEdited"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">if the contract is on testnet, the contract address is only valid in the testnet not in mainnet</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a96c399758c233504cea18d burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">well I would say yes... you just do the same process as for testnet but being connected on mainnet</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a97200353c1dbb7438bdbf3 burstStart read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a96c00cd73408ce4f8f3ea5 avatar-s   ">
+  <img src="./36837536" srcset="https://avatars0.githubusercontent.com/u/36837536?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Charity Compassion Coin (CCC)</div>
+      <div class="chat-item__username js-chat-item-from">@CharityCompassionCoin-CCC</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a97200353c1dbb7438bdbf3" title="2018년 3월 1일 오전 6:32" data-disable-routing="true">3월 01 06:32</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">what does 420.000 stand for in volume?</div>
+  </div>
+</div></div><div class="chat-item model-id-5a972767758c233504d0d4b0 burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a972756d73408ce4f8f4ee1 avatar-s   ">
+  <img src="./14165063" srcset="https://avatars1.githubusercontent.com/u/14165063?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">abaddonsa</div>
+      <div class="chat-item__username js-chat-item-from">@abaddonsa</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a972767758c233504d0d4b0" title="2018년 3월 1일 오전 7:04" data-disable-routing="true">3월 01 07:04</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">hi</div>
+  </div>
+</div></div><div class="chat-item model-id-5a9727e1888332ee3ae43c86 burstContinued read"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">anyone know why i can send ether to my contract and recieved coins, but when I try to send eth from second account then 0 confirmations all time?</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a972820758c233504d0d895 burstContinued read"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">i am working in rinkbey with etherum wallet on windows</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a9728320202dc012e990617 burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">?</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a9735696fba1a703ab2faf2 burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a96c00cd73408ce4f8f3ea5 avatar-s   ">
+  <img src="./36837536" srcset="https://avatars0.githubusercontent.com/u/36837536?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">Charity Compassion Coin (CCC)</div>
+      <div class="chat-item__username js-chat-item-from">@CharityCompassionCoin-CCC</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a9735696fba1a703ab2faf2" title="2018년 3월 1일 오전 8:04" data-disable-routing="true">3월 01 08:04</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">is anyone here</div>
+  </div>
+</div></div><div class="chat-item model-id-5a973590e4ff28713adc3d00 burstContinued read"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">I made a contract but instead of 42 million coins, it only created 420 coins</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a9735a2758c233504d11a76 burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">how do i increase this contract volume of coins?</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a975588e4ff28713adcb64c burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a97557ad73408ce4f8f5401 avatar-s   ">
+  <img src="./36940174" srcset="https://avatars0.githubusercontent.com/u/36940174?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">julian2020</div>
+      <div class="chat-item__username js-chat-item-from">@julian2020</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a975588e4ff28713adcb64c" title="2018년 3월 1일 오전 10:21" data-disable-routing="true">3월 01 10:21</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">hi </div>
+  </div>
+</div></div><div class="chat-item model-id-5a9755a06fba1a703ab37895 burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">i cant see the compilet window on solidity how to get thst</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a978c436fba1a703ab4337a burstStart read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a978c0bd73408ce4f8f59bc avatar-s   ">
+  <img src="./17902923" srcset="https://avatars1.githubusercontent.com/u/17902923?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">marc211</div>
+      <div class="chat-item__username js-chat-item-from">@marc211</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a978c436fba1a703ab4337a" title="2018년 3월 1일 오후 2:14" data-disable-routing="true">3월 01 14:14</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">hi</div>
+  </div>
+</div></div><div class="chat-item model-id-5a97c55153c1dbb7438e7247 burstStart read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a97557ad73408ce4f8f5401 avatar-s   ">
+  <img src="./36940174" srcset="https://avatars0.githubusercontent.com/u/36940174?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">julian2020</div>
+      <div class="chat-item__username js-chat-item-from">@julian2020</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a97c55153c1dbb7438e7247" title="2018년 3월 1일 오후 6:18" data-disable-routing="true">3월 01 18:18</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">hi marc</div>
+  </div>
+</div></div><div class="chat-item model-id-5a984c6b888332ee3ae999b3 burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a984c61d73408ce4f8f76dd avatar-s   ">
+  <img src="./36297185" srcset="https://avatars0.githubusercontent.com/u/36297185?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">openTechIndia</div>
+      <div class="chat-item__username js-chat-item-from">@openTechIndia</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a984c6b888332ee3ae999b3" title="2018년 3월 2일 오전 3:54" data-disable-routing="true">03:54</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">Hii</div>
+  </div>
+</div></div><div class="chat-item model-id-5a984c9c6fba1a703ab822dd burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">Any good tutorial to understand remix?</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a985fc08f1c77ef3a6f9ec3 burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-560006cc0fc9f982beb1564f avatar-s   ">
+  <img src="./6940742" srcset="https://avatars1.githubusercontent.com/u/6940742?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">yann300</div>
+      <div class="chat-item__username js-chat-item-from">@yann300</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a985fc08f1c77ef3a6f9ec3" title="2018년 3월 2일 오전 5:17" data-disable-routing="true">05:17</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text"><span data-link-type="mention" data-screen-name="openTechIndia" class="mention">@openTechIndia</span>  that could help <a href="http://remix.readthedocs.io/en/latest/" rel="nofollow noopener noreferrer" target="_blank" class="link">http://remix.readthedocs.io/en/latest/</a></div>
+  </div>
+</div></div><div class="chat-item model-id-5a98603be4d1c63604ae65fb burstContinued read burstFinal"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text">also someone posted a good video tutorial here .. don't remember who... could you repost again please?</div>
+  </div>
+</div>
+</div><div class="chat-item model-id-5a98bacd6f8b4b9946dba6d2 burstStart read"><div class="chat-item__container">
+  <div class="chat-item__aside">
+    <div class="chat-item__avatar">
+      <span class="widget"><div class="trpDisplayPicture avatar-5a98bac2d73408ce4f8f826c avatar-s   ">
+  <img src="./1079314" srcset="https://avatars1.githubusercontent.com/u/1079314?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  
+</div>
+</span>
+    </div>
+  </div>
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__details">
+      <div class="chat-item__from js-chat-item-from">VINH, NGUYEN QUANG</div>
+      <div class="chat-item__username js-chat-item-from">@vinh6886</div>
+      <a class="chat-item__time js-chat-time" href="https://gitter.im/ethereum/remix?at=5a98bacd6f8b4b9946dba6d2" title="2018년 3월 2일 오전 11:45" data-disable-routing="true">11:45</a>
+    </div>
+    <div class="chat-item__text js-chat-item-text">Hello</div>
+  </div>
+</div></div><div class="chat-item model-id-5a98bb1de4d1c63604b008b3 burstContinued read"><div class="chat-item__container">
+  <div class="chat-item__actions js-chat-item-actions" style="display: none;">
+    <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
+    <i class="chat-item__icon icon-ellipsis"></i>
+  </div>
+  <div class="chat-item__content">
+    <div class="chat-item__text js-chat-item-text"><span data-link-type="mention" data-screen-name="thiagonmat_twitter" class="mention">@thiagonmat_twitter</span> hi</div>
+  </div>
+</div>
+</div></div></div>
+          <div id="initial" style="height:1px;width:1px;overflow:hidden;opacity:0"><a name="initial">_</a></div>
+      </div>
+    </div>
+    <div class="chat-connectivity-indicator-wrapper"></div>
+  </div></div>
+  <div class="chat-embed-footer">
+  <div class="chat-embed-footer__details">
+<!--
+  MB: removed until we design this better
+    <p><i class='icon-person'></i><b>1296</b> people  </p> -->
+    <a id="login" class="btn subdued" href="https://gitter.im/ethereum/remix/~embed#">Start Chatting</a>
+  </div>
+  <div class="chat-embed-footer__info">
+    <p>Sign in to start chatting.</p>
+  </div>
+</div>
+</div>
+<div class="trpBlankPage"></div>
+<script type="text/javascript">
+  var content = document.getElementById('content-frame');
+  content.scrollTop = content.scrollHeight;
+</script>
+<script type="text/javascript">window.gitterClientEnv = {"lang":"ko","domain":"gitter.im","baseServer":"gitter.im","basePath":"https://gitter.im","apiBasePath":"https://gitter.im/api","homeUrl":"/","badgeBaseUrl":"https://badges.gitter.im","googleTrackingId":"UA-45918290-1","googleTrackingDomain":"gitter.im","env":"prod","cdns":["cdn01.gitter.im","cdn02.gitter.im","cdn03.gitter.im"],"version":"708c5f","assetTag":"708c5ff","logging":false,"ravenUrl":"https://0f50f03f994740328ab6a67c82395948@app.getsentry.com/19257","websockets":{"fayeUrl":"https://ws.gitter.im/bayeux","options":{"timeout":120,"retry":2}},"avatarsUrl":"https://avatars.gitter.im","avatarCdns":["https://avatars-01.gitter.im","https://avatars-02.gitter.im","https://avatars-03.gitter.im","https://avatars-04.gitter.im","https://avatars-05.gitter.im"],"embed":{"basepath":"https://embed.gitter.im","cacheBuster":"1"},"vapidAppServerKey":"BMhrlZd_I5OFJSJQTbg2mZ5PTHarzenwsKfsRd8C0-HRBygpDj9O3M4VTJIQfB9VPDjAoO_w2eg7Sj_cMXzuLwI","headlineNumbers":{"gitterUsers":"800K+","gitterRooms":"300K+","gitterGroups":"90K+","gitterCountries":"100+"}};window.troupeContext = {"accessToken":"$v+dyMm3zLG+hNYWe7QJVa2lWyeXMS5i3FBggHJ1MJY4=","isNativeDesktopApp":false,"locale":{"%d unread message":{"one":"%d unread message","other":"%d unread messages"},"Unread messages in %%s, %%s and one other":{"one":"Unread messages in %%s, %%s and one other","other":"Unread messages in %%s, %%s and %d others"},"Unread messages in %s":"Unread messages in %s","Unread messages in %s and %s":"Unread messages in %s and %s","Unread messages from %s":"Unread messages from %s","Unread messages from %s and %s":"Unread messages from %s and %s","Unread messages from %%s, %%s and one other":{"one":"Unread messages from %%s, %%s and one other","other":"Unread messages from %%s, %%s and %d others"}},"features":[],"roomMember":false,"user":null,"troupe":{"id":"578fa63cc2f0db084a23e12f","name":"ethereum/remix","topic":"Ethereum IDE and tools for the web http://remix.ethereum.org/","avatarUrl":"https://avatars-02.gitter.im/group/iv/5/57542cb9c43b8c6019775ed5","uri":"ethereum/remix","userCount":1296,"url":"/ethereum/remix","githubType":"REPO","associatedRepo":"ethereum/remix","security":"PUBLIC","groupId":"57542cb9c43b8c6019775ed5","group":{"id":"57542cb9c43b8c6019775ed5","name":"ethereum","uri":"ethereum","homeUri":"ethereum/home","backedBy":{"type":"GH_ORG","linkPath":"ethereum"},"avatarUrl":"https://avatars-02.gitter.im/group/iv/5/57542cb9c43b8c6019775ed5","forumId":"57f66ffdce7285762887d5ec"},"backend":{"type":"GH_REPO","linkPath":"ethereum/remix"},"public":true},"roomHasWelcomeMessage":false,"snapshots":{}};</script>
+<script type="text/javascript">window.webpackPublicPath = '//cdn02.gitter.im/_s/708c5ff/js/';</script><script type="text/javascript" src="./vendor.js.다운로드"></script><script type="text/javascript" src="./router-nli-embed-chat.js.다운로드"></script>
+
+    <div class="js-drag-overlay drag-frame hide">
+      <span class="octicon octicon-arrow-down"></span>
+    </div>
+  
+
+</body></html>
